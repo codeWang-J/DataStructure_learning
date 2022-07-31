@@ -68,7 +68,14 @@
 **方法**
 ![](zj.png)
 
+### 线索二叉树的存储结构
+![](xsercsccjg.png)
 
+### 三种线索二叉树的对比
+![](szercsddb.png)
+
+### 线索二叉树的总结
+![](xsercszj.png)
 
 
 

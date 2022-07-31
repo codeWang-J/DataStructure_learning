@@ -34,6 +34,15 @@ typedef struct BiTNode
     struct BiTNode *lchild, *rchild;
 }*BiTree,BiTNode;
 
+// 线索二叉树结点
+typedef struct ThreadNode
+{
+    Elemtype data;
+    struct ThreadNode *lchild, *rchild;
+    int ltag, rtag;   // 左右线索标志 tag为0表示指向孩子 tag为1表示指向线索
+}ThreadNode, *Threadtree;
+
+
 // // 初始换一棵空树
 // bool InitBiTree(BiTNode *root){
 //     root = (BiTNode)malloc(sizeof(BiTNode));
@@ -73,6 +82,8 @@ void PostOrder(BiTree T){
         visit(T);
     }
 }
+
+// 二叉树的中序线索化
 
 // 求树的深度
 int treeDepth(BiTree T){
