@@ -73,3 +73,17 @@ void PostOrder(BiTree T){
         visit(T);
     }
 }
+
+// 求树的深度
+int treeDepth(BiTree T){
+    if(T == NULL){
+        return 0;
+    }
+    else{
+        int l = treeDepth(T->lchild);
+        int r = treeDepth(T->rchild);
+        return l>r ? l+1 : r+1;
+    }
+}
+
+
